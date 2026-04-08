@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <title>Meine ASCII-Seite</title>
     <style>
-        body { margin: 0; padding: 0; background: #000; color: #fff; }
-        /* Der Rahmen für dein Bild */
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background: #000; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            overflow: hidden; 
+        }
+
+        /* Der Container für das ASCII-Bild */
+        .ascii-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         iframe {
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             border: none;
-            display: block;
+            /* Der Trick: Skaliert den gesamten Inhalt des iframes */
+            transform: scale(0.5); /* Startwert, falls das Bild zu groß ist */
+            transform-origin: center;
         }
     </style>
 </head>
 <body>
 
-    <!-- Hier wird dein ASCII-Bild reingeladen -->
-    <iframe src="ascii.html"></iframe>
+    <div class="ascii-container">
+        <iframe src="ascii.html"></iframe>
+    </div>
 
 </body>
 </html>
