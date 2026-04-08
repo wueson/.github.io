@@ -2,9 +2,26 @@
 <html>
 <head>
     <style>
-        body { background: #000; color: #00ff00; font-family: monospace; }
-        pre { font-size: 10px; line-height: 8px; }
-    </style>
+    body { 
+        background: #000; 
+        color: #fff; 
+        margin: 0; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        overflow: hidden; /* Verhindert Scrollbalken */
+    }
+
+    pre { 
+        /* Der Zaubertrick: Die Schriftgröße passt sich der Breite an */
+        font-size: 1.2vw; 
+        line-height: 0.8; /* Verengt den Zeilenabstand für bessere Optik */
+        font-family: monospace;
+        margin: 0;
+    }
+</style>
+
 </head>
 <body>
 
