@@ -3,36 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Meine ASCII-Seite</title>
-    <style>
-        body { 
-            margin: 0; 
-            padding: 0; 
-            background: #000; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            overflow: hidden; 
-        }
+  <style>
+    body { 
+        margin: 0; 
+        padding: 0; 
+        background: #333; /* Hier deine Wunschfarbe (z.B. #333 für Dunkelgrau) */
+    }
+    iframe {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        background: transparent; /* Lässt den Hintergrund der index.html durchscheinen */
+    }
+</style>
 
-        /* Der Container für das ASCII-Bild */
-        .ascii-container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            /* Der Trick: Skaliert den gesamten Inhalt des iframes */
-            transform: scale(0.5); /* Startwert, falls das Bild zu groß ist */
-            transform-origin: center;
-        }
-    </style>
 </head>
 <body>
 
